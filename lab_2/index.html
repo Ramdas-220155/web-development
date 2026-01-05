@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>MyBomma</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .internal-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .internal-table th,
+        .internal-table td {
+            border: 2px solid green;
+            padding: 12px;
+            text-align: center;
+        }
+        .internal-table th {
+            background-color: #e8f5e9;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 id="mainHeading">MyBomma</h1>
+    <p>Watch and explore movies</p>
+    <a class="main-link" href="https://www.5movierulz.schule/" target="_blank">
+        Go to Download Page
+    </a>
+</header>
+
+<section class="media">
+    <iframe 
+        src="https://www.youtube.com/"
+        title="YouTube"
+        allowfullscreen>
+    </iframe>
+</section>
+
+<section class="tables">
+
+    <!-- Inline CSS Table -->
+    <div class="table-container">
+        <h2>Inline Styled Movies</h2>
+        <table border="4">
+            <tr>
+                <th style="background-color: lightblue;">Movie Name</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>Dude (2025)</td>
+                <td><a href="#">Download</a></td>
+            </tr>
+            <tr>
+                <td>Hello (2017)</td>
+                <td><a href="#">Download</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Internal CSS Table -->
+    <div class="table-container">
+        <h2>Internal Styled Movies</h2>
+        <table class="internal-table">
+            <tr>
+                <th>Movie Name</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>Kerintha (2015)</td>
+                <td><a href="#">Download</a></td>
+            </tr>
+            <tr>
+                <td>Fidaa (2017)</td>
+                <td><a href="#">Download</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- External CSS Table -->
+    <div class="table-container">
+        <h2>External Styled Movies</h2>
+        <table class="table2">
+            <tr>
+                <th>Movie Name</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td>Geetha Govindam (2018)</td>
+                <td><a href="#">Download</a></td>
+            </tr>
+            <tr>
+                <td>Dude (2025)</td>
+                <td><a href="#">Download</a></td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<div style="text-align:center; margin:30px;">
+    <button id="changeBtn">Change Heading</button>
+    <button onclick="confirmLogout()">Logout</button>
+    <button onclick="askUserName()">Enter Name</button>
+</div>
+
+<footer>
+    <p>© 2026 MyBomma</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
